@@ -119,6 +119,42 @@ nav a:hover { color: var(--color-primary); }
   transform: translateY(-1px);
 }
 
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.btn-secondary {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-secondary:hover { color: var(--color-primary); }
+
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.trust-strip span {
+  font-size: 0.9rem;
+  color: var(--color-ink-soft);
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
 /* Problem */
 .problem { padding: 80px 0; }
 
@@ -190,13 +226,48 @@ nav a:hover { color: var(--color-primary); }
 
 .angebot-card li { margin-bottom: 8px; }
 
+/* Ablauf */
+.ablauf { padding: 80px 0; }
+
+.ablauf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.ablauf-step {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.ablauf-step h3 { font-size: 1.05rem; }
+
+.ablauf-step p {
+  color: var(--color-ink-soft);
+  font-size: 0.95rem;
+}
+
 /* USP */
-.usp { padding: 80px 0; }
+.usp { padding: 80px 0; background: var(--color-bg-alt); }
 
 /* Zielgruppe */
 .zielgruppe {
   padding: 80px 0;
-  background: var(--color-bg-alt);
+  background: var(--color-bg);
   text-align: center;
 }
 
@@ -238,6 +309,13 @@ nav a:hover { color: var(--color-primary); }
 }
 
 .ueber-uns p { color: var(--color-ink-soft); }
+
+.ueber-uns-lead {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--color-primary-dark) !important;
+}
 
 /* Kontakt */
 .kontakt {
