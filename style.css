@@ -273,6 +273,39 @@ nav a:hover { color: var(--color-primary); }
   margin: 0 6px;
 }
 
+/* Legal pages (Impressum / Datenschutz) */
+.legal { padding: 64px 0 96px; }
+
+.legal-inner { max-width: 760px; }
+
+.legal h1 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+.legal h2 {
+  font-size: 1.15rem;
+  margin-top: 36px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.legal p, .legal li {
+  color: var(--color-ink-soft);
+}
+
+.legal a { color: var(--color-primary); }
+
+.legal-note {
+  margin-top: 48px;
+  padding: 16px 20px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
 /* Responsive nav */
 @media (max-width: 640px) {
   .header-inner { flex-direction: column; gap: 12px; }
